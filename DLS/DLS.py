@@ -14,7 +14,7 @@ def dls(graph, start, visited, output, lmt, cnt, goal):
    
     for i in graph[start]:
         print("Parent is: " ,start , " Child is: " , i)
-        if(visited[i] != 1 and lmt != cnt and start != goal):
+        if(visited[i] != 1 and lmt != cnt):
             dls(graph, i, visited, output, lmt, cnt+1, goal)
         elif (start == goal):
            flag = 1 
